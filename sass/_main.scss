@@ -1,17 +1,15 @@
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+
 .registration {
     width: 100%;
 
-
-    
-    &__body {
-
-    
-    }
-    
     &__content {
         display: flex;
-        // display: grid;
-        // grid-template-columns: 50% 50%;
     }
     
     &__left-block {
@@ -104,6 +102,10 @@
         &::placeholder {
             @include text (14px, 500, $textColor);
         }
+
+        &:focus:invalid {
+            border: 1px solid #D11A2A;
+        }
     }
     
     &__warning {
@@ -192,10 +194,25 @@
         border: none;
         cursor: pointer;
         background: $accentColor;
+        transition: ease 0.5s;
 
         @include text(16px, 600, #FFFFFF);
         box-shadow: 0px 20px 25px rgba(209, 26, 42, 0.15);
         border-radius: 12px;
+
+        &:hover {
+            background: #E02535;
+            box-shadow: 0px 20px 25px rgba(209, 26, 42, 0.15);
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+
+        &:disabled {
+            background: #B8BABF;
+            box-shadow: none;
+        }
     }
     
     &__img-block {

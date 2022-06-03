@@ -12,45 +12,51 @@
 
 <body>
 
-   
+
     <main class="main">
-        <!-- <div class="container"> -->
-            <div class="registration">
+        <div class="registration">
+            <div class="container">
                 <div class="registration__body">
                     <div class="registration__content">
                         <div class="registration__left-block">
                             <form action="" class="registration__form">
-                            <div class="registration__title">Регистрация</div>
+                                <div class="registration__title">Регистрация</div>
                                 <div class="registration__items">
                                     <label for="" class="registration__label">
                                         <span>Имя</span>
-                                        <input type="text" class="registration__input" required>
+                                        <input type="text" class="registration__input" required name="first_name">
                                     </label>
-                                    <label for="" class="registration__label">
+                                    <label for="" class="registration__label" required name="last_name">
                                         <span>Фамилия</span>
                                         <input type="text" class="registration__input" required>
                                     </label>
                                     <label for="" class="registration__label">
                                         <span>Email</span>
-                                        <input type="text" class="registration__input" required>
+                                        <input type="email" class="registration__input" required>
                                     </label>
                                     <label for="" class="registration__label">
                                         <span class="not-necessary">Телефон</span>
-                                        <input type="text" class="registration__input">
+                                        <input type="tel" class="registration__input tel"
+                                            placeholder="+7 (995) 765 54 34">
                                     </label>
                                     <label for="" class="registration__label password">
                                         <span>Пароль</span>
-                                        <input type="password" class="registration__input" id="password" autocomplete="current-password" required>
-                                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                                        <input type="password" class="registration__input" id="password"
+                                            autocomplete="current-password" required>
+                                        <a href="#" class="password-control"
+                                            onclick="return show_hide_password(this);"></a>
                                     </label>
                                     <label for="" class="registration__label">
                                         <span>ИНН</span>
-                                        <input type="text" class="registration__input" required>
+                                        <input type="text" class="registration__input input-inn" required value="">
                                     </label>
                                 </div>
 
-                                <div class="registration__warning">Ваша компания уже зарегистрирована, 
-                                    пожалуйста обратитесь&nbsp;к менеджеру вашего аккаунта или <a href="">напишите нам</a></div>
+                                <div class="registration__warning">Ваша компания уже зарегистрирована,
+                                    пожалуйста обратитесь&nbsp;к менеджеру вашего аккаунта или
+                                    <a class="link" href="mailto:pakelvi0707@gmail.com">напишите нам</a>
+                                </div>
+                                <!-- <div class="registration__warning"></div> -->
                                 <div class="registration__required"> - обязательные поля</div>
 
 
@@ -61,22 +67,23 @@
                                     Да, я хочу получать письма с новостями и предложениями
                                 </label>
 
-                                <button class="registration__btn">Далее</button>
+                                <button type="submit" class="registration__btn">Далее</button>
                             </form>
 
                         </div>
-                        <div class="registration__img-block">
+                        <div class="registration__img-block desctop">
                             <img src="./img/form-bg.png" alt="">
                         </div>
                     </div>
 
                 </div>
             </div>
-        <!-- </div> -->
-    
+
+        </div>
+
 
     </main>
-    
+
 
 
 
