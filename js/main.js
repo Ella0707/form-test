@@ -51,7 +51,6 @@ window.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
-    let inputINN = document.querySelector(".input-inn");
     let out = document.querySelector(".out");
     let outLink = document.querySelector(".link");
 
@@ -83,10 +82,10 @@ window.addEventListener("DOMContentLoaded", function () {
             } 
 
             if (input.classList.contains(".input-inn"));
-            if (innTest(input)) {
-                out.innerHTML = "Ваша компания уже зарегистрирована,пожалуйста обратитесь&nbsp;к менеджеру вашего аккаунта или ";
+            if (input.value === "123") {
+                out.innerHTML = "Ваша компания уже зарегистрирована,пожалуйста обратитесь&nbsp;к менеджеру вашего аккаунта или";
                 outLink.innerHTML = "напишите нам";
-                
+                formAddError(input);
                 error++;
             } 
             
@@ -111,10 +110,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
     function emailTest(input) {
         return /.+@globex\.com/.test(input.value);
-    }
-
-    function innTest(input) {
-        return (input.value);
     }
 });
 

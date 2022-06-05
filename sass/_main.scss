@@ -3,38 +3,36 @@
     margin: 0 auto;
 }
 
-
-
 .registration {
     width: 100%;
 
     &__content {
         display: flex;
     }
-    
+
     &__left-block {
         width: 51.5%;
         padding-top: 163px;
         padding-left: 172px;
     }
-    
+
     &__title {
         @include text(48px, 700, $textColor);
         letter-spacing: -0.19vw;
         margin-bottom: 42px;
     }
-    
+
     &__form {
         width: 397px;
     }
-    
+
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 28px 21px;
         margin-bottom: 11px;
     }
-    
+
     &__label {
         @include text (13px, 500, $textColorLight);
         width: 100%;
@@ -44,7 +42,7 @@
             margin-bottom: 13px;
             position: relative;
 
-            &:not(.not-necessary)::after{
+            &:not(.not-necessary)::after {
                 content: "*";
                 color: $accentColor;
                 font-size: 13px;
@@ -103,26 +101,27 @@
             @include text (14px, 500, $textColor);
         }
 
-        // &:focus:invalid {
-        //     border: 1px solid #D11A2A;
-        // }
-
         &.error {
             border: 1px solid #D11A2A;
         }
     }
-    
+
     &__warning {
         @include text (13px, 500, #000000);
         line-height: 1.76;
-        letter-spacing: -0.07vh;
+        letter-spacing: -0.09vh;
         margin-bottom: 22px;
 
         a {
             color: $accentColor;
+            text-decoration: none;
         }
     }
-    
+
+    .out {
+        display: inline;
+    }
+
     &__required {
         @include text (13px, 500, $textColorLight);
         letter-spacing: -0.1vh;
@@ -130,7 +129,7 @@
         margin-bottom: 40px;
         position: relative;
 
-        &::before{
+        &::before {
             content: "*";
             color: $accentColor;
             font-size: 13px;
@@ -156,12 +155,13 @@
     }
 
     &__checkbox-style {
-        position: absolute;
         width: 20px;
         height: 20px;
         border-radius: 3px;
         background: #F4F5F6;
-        margin-left: -35px;
+        position: absolute;
+        top: 0;
+        left: 0px;
     }
 
     &__checkbox-input {
@@ -188,7 +188,7 @@
             transform: translate(-50%, -50%);
         }
     }
-    
+
     &__btn {
         width: 100%;
         display: flex;
@@ -218,7 +218,7 @@
             box-shadow: none;
         }
     }
-    
+
     &__img-block {
         width: 48.5%;
         height: 1114px;

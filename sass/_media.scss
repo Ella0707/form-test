@@ -6,11 +6,10 @@
     width: 100%;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
     .container {
         width: 1440px;
     }
-   
 }
 
 @media (max-width: 1300px) {
@@ -35,26 +34,50 @@
         display: block;
     }
 
+    .container {
+        padding: 0 16px;
+    }
+
     .registration {
 
-        .container {
-            padding: 0 16px;
-        }
+
 
         &__left-block {
             width: 100%;
-            padding-top: 30px;
+            padding-top: 33px;
             padding-left: 0;
             padding-bottom: 40px;
         }
 
         &__title {
-            letter-spacing: -0.19vw;
+            letter-spacing: -0.7vw;
             margin-bottom: 30px;
         }
 
         &__form {
             width: 100%;
+        }
+
+        &__items {
+            gap: 30px 20px;
+            margin-bottom: 8px;
+        }
+
+        &__input {
+            padding: 0 10px 0 20px;
+        }
+
+        &__warning {
+            margin-bottom: 26px;
+        }
+
+        &__required {
+            margin-bottom: 24px;
+        }
+
+        &__select-label {
+            line-height: 1.5;
+            margin-bottom: 28px;
         }
     }
 }
