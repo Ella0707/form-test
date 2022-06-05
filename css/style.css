@@ -27,7 +27,7 @@
   font-style: normal;
 }
 .container {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -146,7 +146,7 @@
   font-weight: 500;
   color: #23262F;
 }
-.registration__input:focus:invalid {
+.registration__input.error {
   border: 1px solid #D11A2A;
 }
 .registration__warning {
@@ -278,9 +278,13 @@
   display: none;
 }
 
-@media (max-width: 1440px) {
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
   .container {
-    width: 100vw;
+    width: 1440px;
   }
 }
 @media (max-width: 1300px) {

@@ -2,10 +2,15 @@
     display: none;
 }
 
-@media (max-width: 1440px) {
+.container {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
     .container {
-        width: 100vw;
+        width: 1440px;
     }
+   
 }
 
 @media (max-width: 1300px) {

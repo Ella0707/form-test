@@ -1,5 +1,5 @@
 .container {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -103,7 +103,11 @@
             @include text (14px, 500, $textColor);
         }
 
-        &:focus:invalid {
+        // &:focus:invalid {
+        //     border: 1px solid #D11A2A;
+        // }
+
+        &.error {
             border: 1px solid #D11A2A;
         }
     }
